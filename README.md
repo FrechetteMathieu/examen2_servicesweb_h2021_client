@@ -38,7 +38,7 @@ N'oubliez pas de faire la commande
 - Depuis le composant RandomCitation, faites un appel à l'api pour récupérer une citation aléatoire et l'afficher au chargement du composant.
 - Quand on clique sur le bouton rafraichir, regénérer une nouvelle citation aléatoire.
 
-#### Point #3 - Affichage de la liste des citations (25 points)
+### Point #3 - Affichage de la liste des citations (25 points)
 
 - Au chargement du composant Dashboard, récupérer la liste de toutes vos citations.
 - Afficher la liste des citations à l'aide des composants ListeCitations et Citation.
