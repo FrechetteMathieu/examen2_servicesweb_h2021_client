@@ -29,29 +29,29 @@ N'oubliez pas de faire la commande
 
 ## Points évalués  
 
-### Point #1 - Modification du composant Citation
+### Point #1 - Modification du composant Citation (15 points)
 
 - Modifier le composant pour lui permettre d'afficher une citation et un auteur reçu en paramètre.
 
-### Point #2 - Affichage d'une citation aléatoire
+### Point #2 - Affichage d'une citation aléatoire (30 points)
 
 - Depuis le composant RandomCitation, faites un appel à l'api pour récupérer une citation aléatoire et l'afficher au chargement du composant.
 - Quand on clique sur le bouton rafraichir, regénérer une nouvelle citation aléatoire.
 
-#### Point #3 - Affichage de la liste des citations
+#### Point #3 - Affichage de la liste des citations (25 points)
 
 - Au chargement du composant Dashboard, récupérer la liste de toutes vos citations.
 - Afficher la liste des citations à l'aide des composants ListeCitations et Citation.
 - Par défaut vous n'avez aucune citation dans la base de données, vous pouvez utiliser Postman pour en ajouter ou attendre d'avoir complêter le formulaire d'ajout pour en voir apparaitre.
 
-### Point #4 - Ajout d'une citation
+### Point #4 - Ajout d'une citation (30 points)
 
 - Permettre d'ajouter une citation en remplissant le formulaire du composant FormAjouterCitation. 
 - Créer une fonction qui effectue un appel à l'api dans le composant Dashboard.
 - Envoyer cette fonction en paramètre au composant FormAjouterCitation.
 - Quand l'ajout est fait, la liste des citations doit se mettre à jour automatiquement.
 
-### Point #5 - Supprimer une citation (Bonus)
+### Point #5 - Supprimer une citation (Bonus - 10 points)
 
 - Depuis le composant ListeCitations, permettre de supprimer une citation quand on clique sur le bouton supprimer correspondant.
 - Après la suppression, la liste des citations doit se mettre à jour automatiquement.
