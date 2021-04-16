@@ -21,7 +21,7 @@ Hiver 2021
 - L'api est fonctionnel, vous n'avez aucun changement à y apporter. Tout le développement se fera dans le client REACT.
 - Ajouter le token que je vous ai envoyé dans le fichier **src/utils/Api.js** à l'endroit indiqué.
 - Pour valider que le token est bien configuré, quand vous allez lancer l'application avec npm start vous aller voir dans l'entête de la page "Bienvenue " avec votre nom.
-- J'ai utilisé des composants Material Design pour la mise en page (Button, Grid, Paper), vous n'avez pas à y toucher n'y à les modifier.
+- J'ai utilisé des composants Material Design pour la mise en page (Button, Grid, Paper), vous n'avez pas à y toucher n'y à les modifier sauf peut-être les boutons pour leur ajouter une fonction sur le onClick.
 
 N'oubliez pas de faire la commande 
 >npm install
