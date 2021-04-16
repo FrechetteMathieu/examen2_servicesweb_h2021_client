@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Examen 2
+Services Web 420-4A4-VI  
+Hiver 2021
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Directives
+- Vous avez droit à toutes vos notes et Internet.
+- Aucune communication n'est permise (messagerie, courriel, etc.). Un élève pris en flagrant délit se verra attribuer la note de 0 pour plagiat. 
+- La durée de l'examen est de 1h50.
+- Vous devez cloner ce projet et implémenter chacun des points demandés.
+- Une fois l'examen terminé, faites un git commit et ensuite un git push de votre projet pour me le remettre.
 
-## Available Scripts
+-----------------------
 
-In the project directory, you can run:
+## Contexte
+À partir d'une ébauche de client REACT, vous devez implémenter le code nécessaire pour interroger un service web de citations.
 
-### `npm start`
+-----------------------
+## Installation et mise en route
+- L'url de l'api est https://obscure-bastion-46412.herokuapp.com
+- Vous pouvez consulter la documentation des routes à l'adresse https://obscure-bastion-46412.herokuapp.com/docs
+- L'api est fonctionnel, vous n'avez aucun changement à y apporter. Tout le développement se fera dans le client REACT.
+- Ajouter le token que je vous ai envoyé dans le fichier **src/utils/Api.js** à l'endroit indiqué.
+- Pour valider que le token est bien configuré, quand vous allez lancer l'application avec npm start vous aller voir dans l'entête de la page "Bienvenue " avec votre nom.
+- J'ai utilisé des composants Material Design pour la mise en page (Button, Grid, Paper), vous n'avez pas à y toucher n'y à les modifier.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+N'oubliez pas de faire la commande 
+>npm install
+----------------------------
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Points évalués  
 
-### `npm test`
+### Point #1 - Modification du composant Citation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Modifier le composant pour lui permettre d'afficher une citation et un auteur reçu en paramètre.
 
-### `npm run build`
+### Point #2 - Affichage d'une citation aléatoire
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Depuis le composant RandomCitation, faites un appel à l'api pour récupérer une citation aléatoire et l'afficher au chargement du composant.
+- Quand on clique sur le bouton rafraichir, regénérer une nouvelle citation aléatoire.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Point #3 - Affichage de la liste des citations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Au chargement du composant Dashboard, récupérer la liste de toutes vos citations.
+- Afficher la liste des citations à l'aide des composants ListeCitations et Citation.
+- Par défaut vous n'avez aucune citation dans la base de données, vous pouvez utiliser Postman pour en ajouter ou attendre d'avoir complêter le formulaire d'ajout pour en voir apparaitre.
 
-### `npm run eject`
+### Point #4 - Ajout d'une citation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Permettre d'ajouter une citation en remplissant le formulaire du composant FormAjouterCitation. 
+- Créer une fonction qui effectue un appel à l'api dans le composant Dashboard.
+- Envoyer cette fonction en paramètre au composant FormAjouterCitation.
+- Quand l'ajout est fait, la liste des citations doit se mettre à jour automatiquement.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Point #5 - Supprimer une citation (Bonus)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Depuis le composant ListeCitations, permettre de supprimer une citation quand on clique sur le bouton supprimer correspondant.
+- Après la suppression, la liste des citations doit se mettre à jour automatiquement.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+----------------------------
 
-## Learn More
+## Commit final et remise
+- Une fois l'examen terminé, faire un dernier commit avec la mention **Commit final**
+- Ensuite, faire un **git push** pour me remettre l'examen. (Je ne corrigerai rien de plus récent que le commit final)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+----------------------------
+ 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
